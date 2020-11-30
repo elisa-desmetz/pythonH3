@@ -11,10 +11,10 @@ def hello_world():
 def hello():
     return 'Hello !'
 
-@app.route('/hello/<username>')
+@app.route('/hello/<string:username>')
 def show_user(username):
     return 'Hello %s !' % escape(username)
 
-@app.route('/hello_template/<username>')
+@app.route('/hello_template/<string:username>')
 def show_user_profile(username=None):
     return render_template("hello_you.html", username=username)
