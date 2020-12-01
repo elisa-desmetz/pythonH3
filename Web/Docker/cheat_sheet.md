@@ -11,4 +11,8 @@ Lors de la création ou du démarrage d'un conteneur, celui-ci ne rend aucun de se
 Ce fichier décrit les dépendances de l'application associées à une versions donnée. <br/>
 Il peut être généré avec la commande ```env1\bin\python -m pip freeze > requirements.txt```. <br/><a href="https://pip.pypa.io/en/stable/reference/pip_freeze/">> Plus d'informations.</a><br/>
 Ce fichier est appelé par ligne ```RUN pip install - requirement.txt``` dans le Dockerfile afin d'installer les dépendances liées à l'applications.
+### Les conteneurs / containers
+Un conteneur est un processus isolé des autres processus de la machine hôte.
+### Les images
+Quand un conteneur est actif, il utilise un système isolé. Ce système est fourni par l'image du conteneur. L'image doit contenir tout ce qui est nécessaire au fonctionnement de l'application ainsi que différents configuratuions pour le conteneur tels que les variables d'environnement et différentes métadonnées.
 
