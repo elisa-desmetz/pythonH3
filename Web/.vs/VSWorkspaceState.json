@@ -1,15 +1,15 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Books",
-    "\\Docker",
-    "\\Docker\\myAPp",
-    "\\Docker\\myAPp\\src",
-    "\\Docker\\pokemonApp",
-    "\\Docker\\pokemonApp\\src",
-    "\\Docker\\pokemonApp\\src\\static",
+    "\\Docker\\myApp",
+    "\\Docker\\myApp\\src",
+    "\\MiniProjet",
+    "\\MiniProjet\\pokemonApp",
+    "\\MiniProjet\\pokemonApp\\src",
+    "\\MiniProjet\\pokemonApp\\src\\static",
+    "\\MiniProjet\\pokemonApp\\src\\templates",
     "\\Tuto"
   ],
-  "SelectedNode": "\\Docker\\pokemonApp\\src\\app.py",
+  "SelectedNode": "\\MiniProjet\\pokemonApp",
   "PreviewInSolutionExplorer": false
 }

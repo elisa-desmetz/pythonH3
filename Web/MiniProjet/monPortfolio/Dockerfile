@@ -1,8 +1,8 @@
 FROM python:3.8
 
-EXPOSE 8501
+EXPOSE 5000
 
-WORKDIR /app
+WORKDIR /test
 
 COPY requirements.txt .
 
@@ -10,6 +10,4 @@ RUN pip install -r requirements.txt
 
 COPY src/ .
 
-ENTRYPOINT ["streamlit", "run"]
-
-CMD [ "app.py"]
+CMD [ "python", "./app.py"]
