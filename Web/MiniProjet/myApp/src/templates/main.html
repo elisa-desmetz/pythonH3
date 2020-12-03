@@ -9,6 +9,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
+    <!-- Custom styles for this template -->
+    <link href="/static/bootstrap.css" rel="stylesheet">
     <title>Hello, world!</title>
     {%- endblock head -%}
 </head>
@@ -27,45 +29,48 @@
     -->
     {%- endblock bootstrap -%}
     {%- block navbar -%}
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="">Mon Projet</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../../home">Home </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link {% if request.path == "/projets/projet-1/" or "/projets/projet-2/" or "/projets/projet-3/" %}active{% endif %} dropdown-toggle" href="../../projets" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Projets<span class="sr-only">(current)</span>
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item {% if request.path == "/projets/projet-1/" %}active{% endif %}" href="../../projets/projet-1">Projet 1</a>
-                            <a class="dropdown-item {% if request.path == "/projets/projet-2/" %}active{% endif %}" href="../../projets/projet-2">Projet 2</a>
-                            <a class="dropdown-item {% if request.path == "/projets/projet-3/" %}active{% endif %}" href="../../projets/projet-3">Projet 3</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {% if request.path == "/contact/" %}active{% endif %}" href="../../contact">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {% if request.path == "/about/" %}active{% endif %}" href="../../about" tabindex="-1">About</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="../../home">Home </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link {% if request.path == " /projets/projet-1/" or "/projets/projet-2/" or "/projets/projet-3/" %}active{% endif %} dropdown-toggle" href="../../projets" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Projets<span class="sr-only">(current)</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item {% if request.path == " /projets/projet-1/" %}active{% endif %}" href="../../projets/projet-1">Projet 1</a>
+                        <a class="dropdown-item {% if request.path == " /projets/projet-2/" %}active{% endif %}" href="../../projets/projet-2">Projet 2</a>
+                        <a class="dropdown-item {% if request.path == " /projets/projet-3/" %}active{% endif %}" href="../../projets/projet-3">Projet 3</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {% if request.path == " /contact/" %}active{% endif %}" href="../../contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {% if request.path == " /about/" %}active{% endif %}" href="../../about" tabindex="-1">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     {%- endblock navbar -%}
     {%- block main -%}
-        <div>
-            {{request.path}}
-        </div>
+    {# main content placeholder #}
     {%- endblock main -%}
     {%- block footer -%}
-    <footer>
-        uazdgd
+    <footer class="footer fixed-bottom mt-auto py-3 row justify-content-between">
+        <div class="container col-3">
+            <span class="text-muted">Running on <a href="https//www.heroku.com">Heroku</a></span>
+        </div>
+        <div class="container col-2">
+            <span class="text-muted">Place sticky footer content here.</span>
+        </div>
     </footer>
     {%- endblock footer -%}
 </body>

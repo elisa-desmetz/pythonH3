@@ -1,6 +1,6 @@
 # Cheat Sheet - Docker
 ## Quickstart
-- ```build``` : Cette commande permet la création d'une image à partir d'un Dockerfile et d'un "contexte". Le contexte représente l'ensemble des fichiers se troiuvant dans le répertoie ou à l'adresse indiquée. <br/> <a href="https://docs.docker.com/engine/reference/commandline/build/">=> Documentation Docker</a> 
+- ```build``` : Cette commande permet la création d'une image à partir d'un Dockerfile et d'un "contexte". Le contexte représente l'ensemble des fichiers se trouvant dans le répertoie ou à l'adresse indiquée. <br/> <a href="https://docs.docker.com/engine/reference/commandline/build/">=> Documentation Docker</a> 
 - ```run``` : Cette commande permet de définir les ressources utilisées par le conteneur. La commande doit sépcifier une IMAGE. <br/><a href="https://docs.docker.com/engine/reference/run/">=> Documentaiton Docker</a>
 - ```exec``` : Cette commande permet d'executer une commande dans le conteneur en cours d'utilisation. Une commande lancée de cette manière n'est pas redémarrée si le conteneur est relancé. <br/> <a href ="https://docs.docker.com/engine/reference/commandline/exec/">=> Documentation Docker</a>
 
