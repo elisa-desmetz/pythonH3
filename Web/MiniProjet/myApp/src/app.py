@@ -15,15 +15,15 @@ def home():
 @app.route('/projets/projet-2/')
 @app.route('/projets/projet-3/')
 def abc():
-    return render_template("main.html")
+    return render_template("projets.html")
 
 @app.route('/contact/')
 def aze():
-    return '<title>Hello H3!</title><h1>Hello !</h1>'
+    return render_template("main.html")
 
 @app.route('/about/')
 def zer():
-    return '<title>About</title><h1>Powered by Heroku</h1>'
+    return render_template("main.html")
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')

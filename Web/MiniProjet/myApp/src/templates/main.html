@@ -1,6 +1,7 @@
 ﻿<!doctype html>
 <html lang="en">
 <head>
+    {%- block head -%}
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,9 +10,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
     <title>Hello, world!</title>
+    {%- endblock head -%}
 </head>
 <body>
-    {% block bootstrap %}
+    {%- block bootstrap -%}
     <!-- BOOTSTRAP SETUP JAVASCRPIT -->
     <!-- Optional JavaScript; choose one of the two! -->
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
@@ -23,8 +25,8 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
     -->
-    {% endblock bootstrap %}
-    {% block navbar %}
+    {%- endblock bootstrap -%}
+    {%- block navbar -%}
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="">Navbar</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,7 +39,7 @@
                         <a class="nav-link" href="../../home">Home </a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link {% if "/project/ in request.path" %}active{% endif %} dropdown-toggle" href="../../projets" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link {% if request.path == "/projets/projet-1/" or "/projets/projet-2/" or "/projets/projet-3/" %}active{% endif %} dropdown-toggle" href="../../projets" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Projets<span class="sr-only">(current)</span>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -47,24 +49,24 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../../home">Contact</a>
+                        <a class="nav-link {% if request.path == "/contact/" %}active{% endif %}" href="../../contact">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../../home" tabindex="-1">About</a>
+                        <a class="nav-link {% if request.path == "/about/" %}active{% endif %}" href="../../about" tabindex="-1">About</a>
                     </li>
                 </ul>
             </div>
         </nav>
-    {% endblock navbar %}
-    {% block main %}
+    {%- endblock navbar -%}
+    {%- block main -%}
         <div>
             {{request.path}}
         </div>
-    {% endblock main %}
-    {% block footer %}
+    {%- endblock main -%}
+    {%- block footer -%}
     <footer>
         uazdgd
     </footer>
-    {% endblock footer %}
+    {%- endblock footer -%}
 </body>
 </html>
