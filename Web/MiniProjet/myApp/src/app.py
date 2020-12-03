@@ -1,4 +1,4 @@
-from flask import Flask, redirect, url_for
+from flask import Flask, redirect, url_for, request
 from flask import render_template
 from markupsafe import escape
 app = Flask(__name__)
@@ -10,9 +10,12 @@ def redirection():
 def home():
     return render_template("index.html")
 
-@app.route('/project/')
+@app.route('/projets/')
+@app.route('/projets/projet-1/')
+@app.route('/projets/projet-2/')
+@app.route('/projets/projet-3/')
 def abc():
-    return '<title>Hello H3!</title><h1>Hello !</h1>'
+    return render_template("main.html")
 
 @app.route('/contact/')
 def aze():

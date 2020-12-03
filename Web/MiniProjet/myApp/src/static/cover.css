@@ -91,7 +91,7 @@ body {
  */
 .cover {
     padding: 0 1.5rem;
-    background-image: url(https://voyage-onirique.com/wp-content/uploads/2020/03/backiee-138908-landscape-scaled.jpg);
+    text-shadow: 2px 2px 5px black;
 }
 .cover .btn-lg {
   padding: .75rem 1.25rem;

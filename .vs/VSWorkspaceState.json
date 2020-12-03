@@ -4,9 +4,14 @@
     "\\Web",
     "\\Web\\Books",
     "\\Web\\Books\\static",
+    "\\Web\\MiniProjet",
+    "\\Web\\MiniProjet\\myApp",
+    "\\Web\\MiniProjet\\myApp\\src",
+    "\\Web\\MiniProjet\\myApp\\src\\static",
+    "\\Web\\MiniProjet\\myApp\\src\\templates",
     "\\Web\\Tuto",
     "\\Web\\Tuto\\templates"
   ],
-  "SelectedNode": "\\Web",
+  "SelectedNode": "\\Web\\MiniProjet\\myApp\\src\\static\\cover.css",
   "PreviewInSolutionExplorer": false
 }
